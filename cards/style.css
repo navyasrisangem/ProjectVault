@@ -66,9 +66,7 @@
     opacity: 1;
     transform: translate3d(0%, -40%, 300px);
 }
-
-/* For tablets (portrait and landscape) */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .card {
         width: 220px;
         height: 330px;
@@ -81,29 +79,24 @@
     }
 
     .title {
-        width: 90%; /* Make title slightly larger for smaller screens */
+        width: 90%;
     }
 }
-
-/* For mobile devices (portrait) */
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
     .card {
-        width: 180px;
-        height: 270px;
-        margin: 10px;
+        width: 230px;
+        height: 300px;
+        margin: 50px;
     }
-
     .main-container {
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
     }
-
     .title {
-        width: 100%; /* Title takes up full width on small screens */
+        width: 100%; 
     }
-
     .cover-image {
-        object-fit: cover; /* Maintain aspect ratio on smaller devices */
+        object-fit: cover;
     }
 }
