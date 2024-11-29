@@ -2,6 +2,7 @@
     width: 100vw;
     height: 100vh; 
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -28,21 +29,6 @@
     border-radius: 5px;
     object-fit: cover;
 }
-.card:hover .image {
-    transform: perspective(2500px) translateY(-5%) rotateX(25deg) translateZ(0);
-    box-shadow: 2px 35px 30px -8px rgba(0, 0, 0, 0.75);
-    border-radius: 5px;
-}
-.image:after {
-    opacity: 0.6;
-}
-
-.cover-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 5px;
-}
 .title {
     width: 80%;
     transition: transform 0.5s;
@@ -51,6 +37,21 @@
     left: 50%;
     transform: translateX(-50%);
 }
+.card:hover .image {
+    transform: perspective(2500px) translateY(-5%) rotateX(25deg) translateZ(0);
+    box-shadow: 2px 35px 30px -8px rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+}
+.image:after {
+    opacity: 0.6;
+}
+.cover-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
 .card:hover .title {
     transform: translate3d(-50%, -60px, 100px);
 }
@@ -66,37 +67,33 @@
     opacity: 1;
     transform: translate3d(0%, -40%, 300px);
 }
-@media screen and (max-width: 768px) {
-    .card {
-        width: 220px;
-        height: 330px;
-    }
-
+@media screen and (min-width: 480px) and (max-width: 768px) {
     .main-container {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-
+    .card {
+        width: 220px;
+        height: 330px;
+    }    
     .title {
         width: 90%;
     }
 }
 @media screen and (max-width: 480px) {
-    .card {
-        width: 230px;
-        height: 300px;
-        margin: 50px;
-    }
     .main-container {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
     }
+    .card {
+        width: 230px;
+        height: 300px;
+        margin: 30px;
+    }   
     .title {
-        width: 100%; 
-    }
-    .cover-image {
-        object-fit: cover;
+        width: 80%; 
     }
 }
