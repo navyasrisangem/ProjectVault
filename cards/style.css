@@ -68,11 +68,6 @@
     transform: translate3d(0%, -40%, 300px);
 }
 @media screen and (min-width: 480px) and (max-width: 768px) {
-    .main-container {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
     .card {
         width: 220px;
         height: 330px;
@@ -82,12 +77,6 @@
     }
 }
 @media screen and (max-width: 480px) {
-    .main-container {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-    }
     .card {
         width: 230px;
         height: 300px;
