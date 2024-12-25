@@ -10,20 +10,19 @@ document.addEventListener("DOMContentLoaded", () => {
     errorMsg.classList.add("d-none");
 
     buttonClick.addEventListener("click", getWeather);
-    searchInput.addEventListener("keydown", (e)=> {
-         if(e.key === "Enter") {
+    searchInput.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
             getWeather();
-         }
+        }
     })
-        function getWeather() {
+    function getWeather() {
         frontPage.classList.add("d-none");
         const cityName = document.getElementById("cityName");
-        
         const temperature = document.getElementById("temperature");
         const humidity = document.getElementById("humidity");
         const wind = document.getElementById("wind");
 
-        let val = searchInput.value.trim();  
+        let val = searchInput.value.trim();
         if (val === "") {
             errorMsg.classList.remove("d-none");
             section.classList.add("d-none");
@@ -51,21 +50,21 @@ document.addEventListener("DOMContentLoaded", () => {
                     errorMsg.classList.add("d-none");
                     section.classList.remove("d-none");
                     footer.classList.remove("d-none");
-                } 
+                }
 
             })
-            function updateImage(temp) {
+        function updateImage(temp) {
             let sectionImg = document.getElementById("sectionImg");
-               if(temp<=5) {
-                 sectionImg.src = "assets/rainy.png";
-               } else if(temp>5 && temp<=15) {
+            if (temp <= 5) {
+                sectionImg.src = "assets/rainy.png";
+            } else if (temp > 5 && temp <= 15) {
                 sectionImg.src = "assets/cloudy.png";
-               } else if(temp>15 && temp<=25) {
+            } else if (temp > 15 && temp <= 25) {
                 sectionImg.src = "assets/moderate.png";
-               } else {
+            } else {
                 sectionImg.src = "assets/sunny.png";
-               }
             }
+        }
     }
 })
 
