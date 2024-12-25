@@ -1,0 +1,35 @@
+.container-fluid {
+    background-image: url("assets/background.jpg");
+    background-size: cover;
+    height: 100vh;
+    color: white;
+}
+.appContainer {
+    width: 300px;
+    height: 350px;
+    border-radius: 12px;
+    background-color: black;
+    opacity: 0.55
+}
+.image {
+    background-color: black;
+    width: 100px;
+    height: 100px;
+}
+.img {
+    height: 43px;
+    margin-right: 5px;
+    padding-top: 15px;
+}
+p {
+    margin: 0 !important; 
+    padding: 0 !important;
+    font-size: 12px;
+}
+#humidity, #wind {
+    font-size: 22px;
+}
+.searchImg {
+    width: 200px;
+    height: 200px;
+}
