@@ -6,8 +6,8 @@
 .mainContainer {
     padding: 5px;
     background-color: #101010;
-    width: 423px;
-    height: 452px;
+    width: 422px;
+    height: 407px;
     margin: 10% auto;
     border-radius: 5px;
 }
@@ -16,19 +16,13 @@
     text-align: center;
     margin: 8px;
 }
-#paragraph {
-    height: 32px;
-    width: 100%;
-    margin-bottom: 5px;
-    background-color: white;
-}
 #inputField {
     width: 100%;
-    height: 63px;
+    height: 66px;
     margin-top: 0px;
     margin-bottom: 9px;
-    color: black;
-    background-color: white;
+    text-align: right;
+    font-size: 35px;
 }
 .subCalculatorKeys > div {
     display: inline-block;
