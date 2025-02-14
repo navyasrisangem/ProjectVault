@@ -75,7 +75,10 @@ header .column span {
     text-transform: uppercase;
     cursor: pointer;
     position: relative;
-    user-select: none;
+    user-select: none;        
+    outline: none;
+    -webkit-tap-highlight-color: transparent; /* Removes the blue highlight on mobile */
+
 }
 .keys .white {
     width: 70px;
@@ -139,10 +142,18 @@ header .column span {
 }
 
 @media screen and (max-width: 622px) {
+    body {
+        flex-direction: column; /* Stack items vertically */
+    }
     .contain {
         transform: rotate(90deg); /* Rotate the entire piano */
         transform-origin: center;
         padding: 15px;
+        width: 580px;
+        height: 260px;
+    }
+    .contain header {
+        padding: 0 23px;
     }
     header h2 {
         font-size: 20px;
