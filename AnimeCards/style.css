@@ -1,3 +1,6 @@
+body {
+    background-color: rgba(224, 161, 149, 0.382);
+}
 .main-container {
     width: 100vw;
     height: 100vh; 
