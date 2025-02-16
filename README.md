@@ -1,82 +1,62 @@
 # ProjectVault 🚀
 
-Welcome to **ProjectVault**, a collection of projects showcasing my web development skills using HTML, CSS, JavaScript. Each project demonstrates different functionalities. Dive in and explore! 🎯
+Welcome to **ProjectVault**, a collection of projects showcasing my web development skills using HTML, CSS, JavaScript, Bootstrap and API's. Each project demonstrates different functionalities! 🎯
 
 ---
 
 ## 📌 Projects Included
 
-### 1️⃣ Anime Cards 🎴
-An interactive anime card collection app that displays details of popular anime characters with visually appealing UI.
-
-#### 🔹 Features:
-- Displays anime character cards with images & descriptions
-- Flip animation for detailed information view
-- Search and filter functionality
-- Responsive design for mobile and desktop
+### 1️⃣ Anime Cards
+- An interactive anime-themed card UI with smooth hover effects, 3D transformations
+  using pure CSS, enhancing visual appeal and user engagement.
+- Implemented a fully responsive layout with optimized media queries and flexible
+  design, ensuring seamless functionality across all devices
 
 #### 🛠️ Tech Stack:
-- HTML, CSS, JavaScript
-- Anime API (optional for dynamic content)
+- HTML, CSS
 
 ---
 
-### 2️⃣ Bank Token System 🏦
-A digital token management system that streamlines customer service in banks by generating and tracking service tokens.
-
-#### 🔹 Features:
-- Generates unique tokens for customers
-- Displays real-time queue status
-- Admin panel for token management
-- Sound and visual notifications for the next token
-
-#### 🛠️ Tech Stack:
-- HTML, CSS, JavaScript
-- Local storage for queue management
-
----
-
-### 3️⃣ **Weather App** ⛅
-A real-time weather application that fetches and displays weather data based on user input.
-
-#### 🔹 Features:
-- Fetches live weather data using OpenWeather API
-- Displays temperature, humidity, and wind speed
-- Dynamic UI updates with weather conditions
-- Error handling for invalid city names
+### 2️⃣ Bank Token System
+- Developed an accessible bank token management system with voice assistance using
+the Web Speech API, enhancing usability for visually impaired users.
+- Implemented a real-time queue management system with a dynamic UI, allowing
+efficient token generation and customer call handling.
 
 #### 🛠️ Tech Stack:
 - HTML, CSS, JavaScript, Bootstrap
-- OpenWeather API for real-time data
 
 ---
 
-### 4️⃣ **Playable Piano** 🎹
-An interactive piano application that allows users to play notes using keyboard keys or mouse clicks.
-
-#### 🔹 Features:
-- Real-time sound playback for each key
-- Supports both keyboard and mouse inputs
-- Adjustable volume control
-- Option to show/hide key labels
+### 3️⃣ **Weather App**
+- Developed a real-time weather application integrating the OpenWeather API, enabling
+users to search cities and get instant temperature, humidity, and wind speed data.                             
+- Implemented dynamic UI updates with Bootstrap for responsiveness, error handling
+for invalid cities, and temperature-based weather icons, enhancing user experience
+and accessibility.
 
 #### 🛠️ Tech Stack:
-- HTML, CSS, JavaScript
-- Audio API for sound playback
+- HTML, CSS, JavaScript, Bootstrap, OpenWeather API
 
 ---
 
-### 5️⃣ **Calculator** 🧮
-A simple yet powerful web-based calculator with essential arithmetic operations and advanced mathematical functions.
-
-#### 🔹 Features:
-- Basic arithmetic operations (+, -, ×, ÷)
-- Square root and square functions
-- Clear and backspace options for input management
-- Interactive UI with real-time updates
+### 4️⃣ **Playable Piano**
+- Developed an interactive virtual piano that allows users to play notes using both
+mouse clicks and keyboard inputs, enhancing user engagement.
+- Optimized audio playback and UI customization, integrating volume control and key
+visibility toggle, enhancing accessibility for diverse user preferences.
 
 #### 🛠️ Tech Stack:
 - HTML, CSS, JavaScript
 
 ---
+
+### 5️⃣ **Calculator**
+- Developed a feature-rich calculator with essential arithmetic operations, square
+root, and exponentiation, ensuring a user-friendly experience.
+- Implemented a dynamic and interactive UI with real-time input handling and
+responsive design for seamless usability across devices.
+
+#### 🛠️ Tech Stack:
+- HTML, CSS, JavaScript
 
