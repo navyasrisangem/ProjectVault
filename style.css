@@ -1,42 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
-*{
+
+* {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     color: #000;
     background-color: #FFFDF2;
 }
+
 header {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
 }
-.card {
-    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.3), 
-                -5px -5px 15px rgba(255, 255, 255, 0.2);
-    border-radius: 15px;    
-    margin-top: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.6); /*semi transparent border for cards*/
+
+h1 {
+    display: inline-block;
+    font-size: 40px;
+    border-right: 5px solid black; /* Cursor effect */   
+    padding-right: 5px;
 }
+
+@keyframes blink {
+    50% {
+        border-color: transparent; /*halfway through the cursor becomes invisible*/
+    }
+}
+
+.blink {
+    animation: blink 0.6s infinite;
+}
+
+.card {
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.3),
+        -5px -5px 15px rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    margin-top: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    /*semi transparent border for cards*/
+}
+
 .card:hover {
     box-shadow: 20px 20px 20px rgb(73, 70, 70);
     border-radius: 15px;
     transition: 0.5s;
     transform: scale(1.05);
 }
+
 .card-img-top {
     height: 200px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
+
 .card-body {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
+
 a {
     text-decoration: none;
 }
+
 p {
     font-size: 14px;
     color: #00000082;
-    list-style-type: none;
+}
+
+.techstack {
+    font-size: 12px;
 }
