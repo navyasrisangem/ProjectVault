@@ -52,10 +52,8 @@ visibility toggle, enhancing accessibility for diverse user preferences.
 ---
 
 ### 5️⃣ **Calculator**
-- Developed a feature-rich calculator with essential arithmetic operations, square
-root, and exponentiation, ensuring a user-friendly experience.
-- Implemented a dynamic and interactive UI with real-time input handling and
-responsive design for seamless usability across devices.
+- Developed a feature-rich calculator with essential arithmetic operations, ensuring a user-friendly experience.
+- Implemented dark theme and light theme.
 
 #### 🛠️ Tech Stack:
 - HTML, CSS, JavaScript
