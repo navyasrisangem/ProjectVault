@@ -2,48 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewdivort" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="icon" href="assets/calculator.png">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 <body>
-    <main class="mainContainer">
-        <h1 class="heading">Calculator</h1>
-        <p id="inputField"></p>
-        <div id="calculatorKeys">
-            <div class="subCalculatorKeys">
-                <div>√𝑥</div>
-                <div>𝑥²</div>
-                <div>C</div>
-                <div>÷</div>
-            </div>
-            <div class="subCalculatorKeys">
-                <div>7</div>
-                <div>8</div>
-                <div>9</div>
-                <div>×</div>
-            </div>
-            <div class="subCalculatorKeys">
-                <div>4</div>
-                <div>5</div>
-                <div>6</div>
-                <div>-</div>
-            </div>
-            <div class="subCalculatorKeys">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-                <div>+</div>
-            </div>
-            <div class="subCalculatorKeys">
-                <div>.</div>
-                <div>0</div>
-                <div>⌫</div>
-                <div>=</div>
-            </div>           
+    <div class="container">
+       <div class="calculator dark">
+        <div class="theme-toggler active">
+            <i class="toggler-icon"></i>
         </div>
-    </main>
+        <div class="display-screen">
+            <div id="display"></div>
+        </div>
+        <div class="buttons">
+           <table>
+            <tr>
+                <td><button class="btn-operator" id="clear">C</button></td>
+                <td><button class="btn-operator" id="/">&divide;</button></td>
+                <td><button class="btn-operator" id="*">&times;</button></td>
+                <td><button class="btn-operator" id="backspace"><</button></td>
+            </tr>
+            <tr>
+                <td><button class="btn-number" id="7">7</button></td>
+                <td><button class="btn-number" id="8">8</button></td>
+                <td><button class="btn-number" id="9">9</button></td>
+                <td><button class="btn-operator" id="-">-</button></td>
+            </tr>
+            <tr>
+                <td><button class="btn-number" id="4">4</button></td>
+                <td><button class="btn-number" id="5">5</button></td>
+                <td><button class="btn-number" id="6">6</button></td>
+                <td><button class="btn-operator" id="+">+</button></td>
+            </tr>
+            <tr>
+                <td><button class="btn-number" id="1">1</button></td>
+                <td><button class="btn-number" id="2">2</button></td>
+                <td><button class="btn-number" id="3">3</button></td>
+                <td><button class="btn-operator" id=".">.</button></td>
+            </tr>
+            <tr>
+                <td><button class="btn-operator" id="(">(</button></td>
+                <td><button class="btn-number" id="0">0</button></td>
+                <td><button class="btn-operator" id=")">)</button></td>
+                <td><button class="btn-equal" id="equal">=</button></td>
+            </tr>
+           </table>
+        </div>
+       </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,65 +1,30 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const display = document.getElementById('inputField');
-    const buttons = document.querySelectorAll('.subCalculatorKeys div');
-    let currentInput = '';
-    let operator = '';
-    let firstOperand = null;
+const display = document.querySelector('#display');
+const buttons = document.querySelectorAll('button');
 
-    buttons.forEach(button => {
-        button.addEventListener('click', () => {
-            const value = button.textContent;
-
-            if (!isNaN(value) || value === '.') {
-                currentInput += value;
-                display.textContent = currentInput;
-            } else if (value === 'C') {
-                currentInput = '';
-                operator = '';
-                firstOperand = null;
-                display.textContent = '';
-            } else if (value === '⌫') {
-                currentInput = currentInput.slice(0, -1);
-                display.textContent = currentInput;
-            } else if (value === '√𝑥') {
-                if (currentInput) {
-                    currentInput = Math.sqrt(parseFloat(currentInput)).toString();
-                    display.textContent = currentInput;
-                }
-            } else if (value === '𝑥²') {
-                if (currentInput) {
-                    currentInput = Math.pow(parseFloat(currentInput), 2).toString();
-                    display.textContent = currentInput;
-                }
-            } else if (value === '=') {
-                if (firstOperand !== null && operator && currentInput) {
-                    const secondOperand = parseFloat(currentInput);
-                    switch (operator) {
-                        case '+':
-                            currentInput = (firstOperand + secondOperand).toString();
-                            break;
-                        case '-':
-                            currentInput = (firstOperand - secondOperand).toString();
-                            break;
-                        case '×':
-                            currentInput = (firstOperand * secondOperand).toString();
-                            break;
-                        case '÷':
-                            currentInput = secondOperand !== 0 
-                                ? (firstOperand / secondOperand).toString() 
-                                : 'Error';
-                            break;
-                    }
-                    display.textContent = currentInput;
-                    firstOperand = null;
-                    operator = '';
-                }
-            } else {
-                if (currentInput) {
-                    firstOperand = parseFloat(currentInput);
-                    operator = value;
-                    currentInput = '';
-                }
-            }
-        });
-    });
+buttons.forEach((item) => {
+    item.onclick = () => {
+        if(item.id == 'clear') {
+            display.innerText = '';
+        } else if (item.id == 'backspace') {
+            display.innerText = display.innerText.slice(0, -1);
+        } else if(display.innerText != '' && item.id == 'equal') {
+            display.innerText = eval(display.innerText);
+        }
+        else if(display.innerText == '' && item.id == 'equal') {
+            display.innerText = 'Empty!';
+            setTimeout(() => (display.innerText = ''), 2000);
+        } else {
+            display.innerText += item.id;
+        }
+    };   
 });
+
+const themeToggleBtn = document.querySelector('.theme-toggler');
+const calculator = document.querySelector('.calculator');
+const toggleIcon = document.querySelector('.toggler-icon');
+let isDark = true;
+themeToggleBtn.onclick = () => {
+    calculator.classList.toggle('dark');
+    themeToggleBtn.classList.toggle('active');
+    isDark = !isDark;
+};
