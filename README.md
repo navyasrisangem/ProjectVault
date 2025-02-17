@@ -53,7 +53,7 @@ visibility toggle, enhancing accessibility for diverse user preferences.
 
 ### 5️⃣ **Calculator**
 - Developed a feature-rich calculator with essential arithmetic operations, ensuring a user-friendly experience.
-- Implemented dark theme and light theme.
+- Implemented a dynamic dark and light theme toggle feature.
 
 #### 🛠️ Tech Stack:
 - HTML, CSS, JavaScript
