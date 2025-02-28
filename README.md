@@ -1,19 +1,17 @@
 # ProjectVault 🚀
 
-Welcome to **ProjectVault**, a collection of projects showcasing my web development skills using HTML, CSS, JavaScript, Bootstrap and API's. Each project demonstrates different functionalities! 🎯
+Welcome to **ProjectVault**, a collection of projects showcasing my web development skills using HTML, CSS, JavaScript, React, Axios, Bootstrap and API's. Each project demonstrates different functionalities! 🎯
 
 ---
 
 ## 📌 Projects Included
 
-### 1️⃣ Anime Cards
-- An interactive anime-themed card UI with smooth hover effects, 3D transformations
-  using pure CSS, enhancing visual appeal and user engagement.
-- Implemented a fully responsive layout with optimized media queries and flexible
-  design, ensuring seamless functionality across all devices
+### 1️⃣ Ekart
+- Built a dynamic web app, Ekart, using React and Axios, integrating the FakeStore API for product listings, category filters, and cart functionality.
+- Implemented responsive UI, state management, and API integration to provide a seamless user experience with real-time data updates.
 
 #### 🛠️ Tech Stack:
-- HTML, CSS
+- HTML, JavaScript, ReactJs, Axios, Bootstrap, Fake Store API
 
 ---
 
@@ -51,7 +49,18 @@ visibility toggle, enhancing accessibility for diverse user preferences.
 
 ---
 
-### 5️⃣ **Calculator**
+### 5️⃣ **Anime Cards**
+- An interactive anime-themed card UI with smooth hover effects, 3D transformations
+  using pure CSS, enhancing visual appeal and user engagement.
+- Implemented a fully responsive layout with optimized media queries and flexible
+  design, ensuring seamless functionality across all devices
+
+#### 🛠️ Tech Stack:
+- HTML, CSS
+
+---
+
+### 6️⃣ **Calculator**
 - Developed a feature-rich calculator with essential arithmetic operations, ensuring a user-friendly experience.
 - Implemented a dynamic dark and light theme toggle feature.
 
